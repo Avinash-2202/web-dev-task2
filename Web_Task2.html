@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Motor - New Car Launch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .car-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .feature {
+            flex: 1 1 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .cta {
+            margin-bottom: 50px;
+        }
+
+        .cta button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #0056b3;
+        }
+
+      /* footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer .social-icons i {
+            font-size: 1.5em;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .contact-info {
+            text-align: right;
+        } */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            justify-content: center;
+        }
+        footer i{
+            font-size: 1.5em;
+            margin-right: 10px;
+            cursor: pointer;
+
+        }
+
+        .footer p {
+            margin-bottom: 20px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .footer li {
+            margin-right: 20px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .footer a:hover {
+            color: #ccc;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .contact-info {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body >
+    <header>
+        <div class="logo">Luxury Motor</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" id="about">
+        <h1>Welcome to the Future</h1>
+        <img src="https://imgd-ct.aeplcdn.com/1056x660/n/xsoupsa_1476828.jpg?q=80" alt="New Car" class="car-image">
+        <p>Experience the power and luxury of our latest car model. It's not just a car, it's a lifestyle.</p>
+    </div>
+
+    <div class="container" id="services">
+        <h2>Our Services</h2>
+        <p>We offer a range of services to meet your needs.</p>
+        <!-- Add service details here -->
+    </div>
+
+    <div class="container" id="features">
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Advanced Technology</h3>
+                <p>Equipped with state-of-the-art technology to enhance your driving experience.</p>
+                <p> Our latest car model comes with advanced safety features, including automatic emergency braking, pedestrian detection, and lane departure warning. </p>
+                <p> Our latest car model provides a keyless entry system, which allowsthe driver to unlock and start the car with just the press of a button. </p>
+                <p> Our new car model offers an unmatched performance with a 2.0L turbocharged engine, delivering 240 horsepower and 0-60 mph in 5.6 seconds. </p>
+                <img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/70c96cb1-1fa5-49ac-9a1d-03b4880a8816/d5fb60cc-2e2b-4963-9b12-26e1ce111132.png">
+            </div>
+            <div class="feature">
+                <h3>Luxurious Interior</h3>
+                <p>Indulge in comfort with premium materials and exquisite craftsmanship.</p>
+                <p></p>
+                <p> Our new car model comes with an advanced infotainment system, including a 12.3-inch touchscreen display, navigation, and wireless charging. </p>
+                <p> Our newest car model provides a spacious interior with ample legroom and headroom for both the driver and passengers. </p>
+                <img src="https://images.hindustantimes.com/auto/img/2023/12/12/1600x900/Porsche_Macan_EV_1702358944893_1702358952553.webp" width="700">
+            </div>
+            <div class="feature">
+                <h3>Efficient Performance</h3>
+                <p>Experience powerful performance while maintaining fuel efficiency.</p>
+                <p> Our newest car model provides an impressive fuel efficiency of 32 mpg on the highway and 25 mpg in the city. </p>
+                <img src="https://media.gettyimages.com/id/1220103996/photo/generic-red-sports-car-moving-at-high-speed-on-racetrack.jpg?s=612x612&w=0&k=20&c=v9ay9_PnV6n3xmbXt-uKcmFNaqnC6fDKrNSFKr3Nxqw=">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us!</p>
+        <!-- Add contact form or contact information here -->
+    </div>
+
+    <!-- <footer>
+        <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="contact-info">
+            <p>Luxury Motor</p>
+            <p>123 Luxury Avenue, City</p>
+            <p>info@luxurymotor.com</p>
+        </div>
+    </footer> -->
+    <footer class="footer">
+        <p> &copy; 2023 Car Company </p>
+        <ul>
+            <i class="fab fa-facebook"></i>
+         
+            <i class="fas fa-times"></i>
+          
+            <i class="fab fa-instagram"></i>
+           
+        </ul>
+    </footer>
+</body>
+
+</html>
